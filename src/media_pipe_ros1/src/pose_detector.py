@@ -31,7 +31,7 @@ class PosePublisher():
 
     def __init__(self):
         rospy.init_node('mediapipe_pose_publisher')
-        self.publisher_ = rospy.Publisher('/mediapipe/human_pose_list',MediaPipeHumanPoseList, 10)
+        self.publisher_ = rospy.Publisher('/mediapipe/human_pose_list',MediaPipeHumanPoseList,  queue_size=10)
         
 
     def getimage_callback(self):
@@ -55,8 +55,8 @@ class PosePublisher():
                 imageHeight, imageWidth, _ = image.shape
 
                     # Draw the pose annotation on the image.
-                image.flags.writeable = True
-                image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+                #image.flags.writeable = True
+                #image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
                 mp_drawing.draw_landmarks(
                     image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
   

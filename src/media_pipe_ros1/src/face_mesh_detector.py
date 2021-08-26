@@ -59,8 +59,8 @@ class FaceMeshPublisher():
                 imageHeight, imageWidth, _ = image.shape
 
                     # Draw the pose annotation on the image.
-                image.flags.writeable = True                
-                image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+                #image.flags.writeable = True                
+                #image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
                 teste = []
                 if results.multi_face_landmarks:
                     index_face_mesh = 0

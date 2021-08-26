@@ -1,0 +1,10 @@
+<launch>
+	<!-- camera usb -->
+  	<!-- <include  file="$(find usb_cam)/launch/usb_cam-test.launch" />-->
+
+	 
+
+  	<node pkg="media_pipe_ros1" type="hands_detector.py" name="hands_detector" output="screen">
+  	</node>
+
+</launch>
