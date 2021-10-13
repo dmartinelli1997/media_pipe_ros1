@@ -28,7 +28,7 @@ NAME_POSE = [
     (PoseLandmark.RIGHT_HEEL), ( PoseLandmark.LEFT_FOOT_INDEX),
     (PoseLandmark.RIGHT_FOOT_INDEX)
 ]
-cap = cv2.VideoCapture(4)
+cap = cv2.VideoCapture(0)
 
 class FaceMeshPublisher():
 
