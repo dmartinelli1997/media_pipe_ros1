@@ -1,3 +1,4 @@
+sensor_msgs/Image image_raw
 int32 num_humans
 MediaPipeHumanHand human_hand_list
 FaceMeshPoint[468] human_face_mesh_list

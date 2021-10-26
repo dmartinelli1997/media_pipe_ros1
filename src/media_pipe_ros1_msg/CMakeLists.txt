@@ -4,6 +4,7 @@ project(media_pipe_ros1_msg)
 find_package(catkin REQUIRED COMPONENTS
 	message_generation
 	std_msgs
+  sensor_msgs
 )
 
 
@@ -23,6 +24,7 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
 )
 
 
